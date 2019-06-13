@@ -1,0 +1,124 @@
+/*Common Styles*/
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Common nav styles */
+.navigation-wrapper {
+    height: 190px;
+    background-color: rgb(19, 6, 31); 
+    color: #000000;
+
+    /* Flexbox container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Different padding methods.*/
+    padding: 60px 100px;
+    /* padding: 60px 100px 60px 100px; */
+    /* padding: 100px; */
+    /* padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 100px;
+    padding-left: 100px; */
+
+}
+
+.navigation-wrapper > .left-column{
+    display: flex;
+    align-items: center;
+    
+}
+
+.navigation-wrapper > .left-column > .icon{
+    margin: 15px;
+    color: rebeccapurple;
+}
+
+.navigation-wrapper > .icon i{
+    font-size: 2em;  
+    color: rebeccapurple;
+}
+
+/*Left Column Styles*/
+.navigation-wrapper >.left-column > .contact-hours-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    color:rgb(226, 214, 158);
+   
+}
+
+.navigation-wrapper > .contact-hours-wrapper> .hours{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.links-wrapper > .nav-link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color:  rgb(226, 214, 158);
+}
+
+/*Center Column Styles*/
+.navigation-wrapper > .center-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+
+.navigation-wrapper > .center-column > .banner-image{
+    display: flex;
+    justify-content: center;
+}
+
+ .navigation-wrapper > .center-column > .banner-image img{
+    width: 216px;
+    height: 100%; 
+} 
+
+.links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.links-wrapper > .nav-link {
+    width: 70px;
+    text-align: center;
+}
+
+.links-wrapper > .nav-link a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: rgb(255, 102, 0);
+    text-decoration: none; 
+    transition: 0.5s; 
+
+}
+
+.links-wrapper > .nav-link a:hover {
+    color: rgb(255, 252, 66);
+    letter-spacing: 2px;
+}
+
+/* Right column styles*/
+.navigation-wrapper > .right-column{
+    display: flex;
+    align-items: center;
+}
+.navigation-wrapper >.right-column > .address-wrapper {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: right;
+}
+
+.navigation-wrapper >.right-column > .address-wrapper a{
+    color: rgb(226, 214, 158);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+
+.navigation-wrapper > .right-column > .contact-icon {
+    margin-left: 15px;
+    font-size: 2em;
+}
